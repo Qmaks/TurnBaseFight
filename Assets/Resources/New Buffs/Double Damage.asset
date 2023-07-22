@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b44ae0ccc94b179273a8c0974553a2, type: 3}
+  m_Name: Double Damage
+  m_EditorClassIdentifier: 
+  visualName: Double Damage
+  duration: 1
+  effectList:
+  - rid: 4752718660944003103
+  references:
+    version: 2
+    RefIds:
+    - rid: 4752718660944003103
+      type: {class: DamageEffectSelf, ns: BuffSystem.NewBuffSystem, asm: Assembly-CSharp}
+      data:
+        Operator:
+          rid: 4752718660944003105
+        Value: 2
+    - rid: 4752718660944003105
+      type: {class: EffectOperatorMultiply, ns: BuffSystem.NewBuffSystem, asm: Assembly-CSharp}

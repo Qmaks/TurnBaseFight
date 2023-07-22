@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b44ae0ccc94b179273a8c0974553a2, type: 3}
+  m_Name: Vampire Self
+  m_EditorClassIdentifier: 
+  visualName: Vampire Self
+  duration: 1
+  effectList:
+  - rid: 4752718660944003099
+  - rid: 4752718660944003101
+  references:
+    version: 2
+    RefIds:
+    - rid: 4752718660944003099
+      type: {class: ArmorEffectSelf, ns: BuffSystem.NewBuffSystem, asm: Assembly-CSharp}
+      data:
+        Operator:
+          rid: 4752718660944003100
+        Value: -25
+    - rid: 4752718660944003100
+      type: {class: EffectOperatorSum, ns: BuffSystem.NewBuffSystem, asm: Assembly-CSharp}
+    - rid: 4752718660944003101
+      type: {class: VampirismEffectSelf, ns: BuffSystem.NewBuffSystem, asm: Assembly-CSharp}
+      data:
+        Operator:
+          rid: 4752718660944003102
+        Value: 50
+    - rid: 4752718660944003102
+      type: {class: EffectOperatorSum, ns: BuffSystem.NewBuffSystem, asm: Assembly-CSharp}
